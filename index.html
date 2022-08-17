@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="img/behold-logo-small.png" />
+
+    <title>Behold registration page</title>
+  </head>
+  <body>
+    <div class="overlay">
+
+      <div id="container">
+        <div class="logo-container">
+          <img src="img/behold-logo.png" alt="logo" >
+        </div>
+        <div class="panel-container">
+          <div class="panel">
+           <h1 class="panel-heading"> Create an account</h1>
+           <p class="panel-subheading">
+            Already have an account? <a href="">Sign in </a></p>
+  
+              <form action="" onsubmit="alert('success')">
+  
+                <div class="input">
+                  <label for="email-address">Email address</label>
+                  <input type="email" required id="email-address">
+                  <div class="input-indicator"></div>
+                </div>
+                
+                <div class="name">
+                  <div class="input">
+                    <label for="firstName">First name</label>
+                    <input type="text" required id="firstName">
+                    <div class="input-indicator"></div>
+                  </div>
+                  
+                  <div class="input">
+                    <label for="lasttName">Last name</label>
+                    <input type="text" required id="lastName">
+                    <div class="input-indicator"></div>
+                  </div>
+                </div>
+  
+                <div class="input">
+                  <label for="password">Password</label>
+                  <input type="password" required id="password">
+                  <div class="input-indicator"></div>
+                </div> 
+  
+                <div class="date-of-birth">
+                  <h6>Date of birth</h6>
+                  <div class="date-of-birth-input">
+  
+                    <div class="dropdown">
+                      <label for="months">Month</label>
+                      
+                      <select name="months" id="months">
+                        <option value="January">January</option>
+                        <option value="Febuary">Febuary</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                      </select>
+                    </div>
+          
+    
+                   <div class="input">
+                    <label for="day">Day</label>
+                    <input type="number" required id="day" min="1" max="31">
+                    <div class="input-indicator"></div>
+                   </div>
+    
+                   <div class="input">
+                    <label for="year">Year</label>
+                    <input type="number" required id="year" min="1900" max="2022">
+                    <div class="input-indicator"></div>
+                   </div>
+                  </div>
+                </div>
+  
+                <p class="consent">
+                  By clicking Create account, I agree that I have read
+                  and accepted the <a href="#">Terms of Use</a> and <a href="#"> Privacy Policy</a>.
+                </p>
+  
+                <button type="submit" class="create-account-btn">
+                  Create account
+                </button>
+  
+  
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let images=["fall.jpeg", 'flowerPlant.jpeg',"leaf.jpeg" ];
+      function changebg(){
+        let randomNumber=Math.floor(Math.random() * images.length);
+        document.body.style.backgroundImage="url(img/"+images [randomNumber] +")"
+      }
+      window.onload=changebg;
+    </script>
+  </body>
+</html>

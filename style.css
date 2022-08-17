@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root{
+--blue:#2F80ED;
+--black: #222222;
+--grey: #828282;
+--logocolor:#F0F0F0;
+--white: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'lato',sans-serif;
+    color: var(--grey);
+    font-size: 1.2rem;
+    height: 100vh;
+    background-size: cover;
+}
+.overlay{ 
+    height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+}
+p{
+    max-width: 600px;
+}
+a{
+    color: var(--blue);
+}
+#container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.4rem;
+    height: 100%;
+    align-items: center;
+}
+.logo-container{
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+}
+.panel-container{
+    grid-column: 6/12;
+
+}
+.panel{
+    background-color: var(--white);
+    padding: 2.4rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.panel-heading{
+    color: var(--black);
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.2rem;
+}
+.panel-subheading{
+    margin-top: 8px;
+    margin-bottom: 2.4rem;
+    
+}
+.input{
+    margin-bottom: 2rem;
+    position: relative;
+}
+.input label{
+    display:block;
+    font-weight: 700;
+}
+.input input{
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    outline: none;
+    width: 100%;
+    padding:0 ;
+    height: 28px;
+}
+.input-indicator{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: all 300ms ease-in-out;
+   
+}
+.input input:focus ~ .input-indicator{
+    background-color: var(--blue);
+    width: 100%;
+    left:0
+
+}
+.name{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    gap: 1.2rem;
+}
+.date-of-birth{
+    margin: 0;
+    margin-bottom: 8px;
+}
+.date-of-birth h6{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.dropdown label{
+    display: block;
+}
+.dropdown select{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    height: 28px;
+    padding: 0;
+}
+.date-of-birth-input{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.2rem;
+}
+.consent{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4rem;
+}
+button{
+    display: block;
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1rem 2rem ;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width:670px){
+   .logo-container{
+    display: none;
+   } 
+   .panel-container{
+    grid-column: 1/span 12;
+   }
+}
+
+
+@media (max-width:360px){
+    #container{
+     padding: 0;
+    } 
+    .panel{
+     height: 100vh;
+     border-radius: 0;
+    }
+ }
