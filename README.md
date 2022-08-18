@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{https://deguzman7.github.io/reponsive-login-registration-page/}">
+    <a href="https://{https://deguzman7.github.io/reponsive-login-registration-page/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{https://deguzman7.github.com/reponsive-login-registration-page}">
+    <a href="https://{https://deguzman7.github.com/reponsive-login-registration-page">
       Solution
     </a>
     <span> | </span>
