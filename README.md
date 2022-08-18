@@ -69,6 +69,6 @@ $ npm start
 
 ## Contact
 
-- Website [linkedin](https://{https://www.linkedin.com/in/chinedu-emenike-38647a186/})
-- GitHub [@DeGuzman7](https://{github.com/your-usermame})
-- Twitter [@DeGuztech](https://{twitter.com/DeGuztech})
+- Website [linkedin](https://www.linkedin.com/in/chinedu-emenike-38647a186/)
+- GitHub [@DeGuzman7](https://github.com/DeGuzman7)
+- Twitter [@DeGuztech](https://twitter.com/DeGuztech)
